@@ -1,0 +1,216 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.editor-section {
+    display: flex;
+    gap: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controls button {
+    padding: 10px;
+    background: linear-gradient(45deg, #6a5acd, #4682b4);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: linear-gradient(45deg, #4682b4, #6a5acd);
+}
+
+.circular-image-button {
+    width: 200px;
+    /* Adjust the size as needed */
+    height: auto;
+    border-radius: 8px;
+    /* Makes the button circular */
+    background-color: #f0f0f0;
+    /* Light background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Ensures image stays within bounds */
+    cursor: pointer;
+    /* Indicates the button is clickable */
+}
+
+.circular-image-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the button area */
+    border-radius: 50%;
+    /* Matches the button shape */
+}
+
+.circular-image-button:hover {
+    transform: scale(1.1);
+    /* Slightly enlarges the button */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow */
+}
+
+.circular-image-button:active {
+    transform: scale(0.95);
+    /* Shrinks slightly for a "pressed" effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Reduced shadow */
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .main-page {
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .controls {
+        gap: 8px;
+        flex-direction: row;
+        position: sticky;
+        flex-wrap: nowrap;
+        top: 0;
+        background-color: white;
+        padding:15px 0px;
+    }
+
+   
+
+    .controls button {
+        padding: 8px;
+        /* Reduce padding in buttons */
+    }
+    .editor-section{
+        flex-direction: column;
+    }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .main-page {
+        padding: 10px;
+        /* Adjust padding further for smaller screens */
+    }
+
+
+
+    .controls {
+        gap: 5px;
+        /* Further reduce gap for smaller screens */
+    }
+
+   
+    .controls button {
+        padding: 6px;
+        /* Further reduce padding */
+    }
+}
+@media screen and (max-width: 768px) {
+   .segment-1 .banner p{
+    font-size: 12px;
+}
+
+
+    .segment-preview {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .segment {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .segment-1 {
+        /* flex-direction: column; */
+        gap: 10px;
+        height: auto;
+    }
+
+    .segment-1 .banner {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .banner-right {
+        width: 50%;
+    }
+
+    .segment-1 .right-image {
+        height:150px;
+    }
+
+    .banner-headings h2 {
+        font-size: 15px;
+    }
+
+    .segment-2 .segment-input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .segment-3 {
+        /* flex-direction: column; */
+        width: 95%;
+        height: auto;
+        /* padding: 10px; */
+    }
+
+    .segment-3 .banner {
+        width: 100%;
+        /* padding: 10px 0; */
+    }
+
+    .segment-3 .ban-img {
+        width: 100%;
+    }
+
+    .ban-img .right-image {
+        height:150px;
+    }
+
+    .modal-seg-content {
+        width: 90%;
+        max-height: 80vh;
+        padding: 15px;
+    }
+    .segment-3 .banner h2{
+        font-size: 15px;
+    }
+    .segment-3 .banner div{
+        width:150px;
+        padding:15px 0px;
+        border-radius: 15px;
+    }
+    .segment-3 .banner a{
+        font-size: 12px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .Footer-content,
+    .Mid-content {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
