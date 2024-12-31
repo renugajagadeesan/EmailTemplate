@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-mongoose.connect('mongodb://localhost:27017/group-editornew', {
+mongoose.connect('mongodb+srv://megarajan55:email123@email.ol2gq.mongodb.net/emailtemplate?retryWrites=true&w=majority&appName=email', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
